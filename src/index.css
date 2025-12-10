@@ -1,6 +1,16 @@
+/* Directivas de Tailwind CSS que importan las capas base, componentes y utilidades */
+/* Estas directivas son procesadas por Tailwind durante la compilación */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Estilos globales para asegurar que la aplicación ocupe toda la altura de la pantalla */
+/* html, body, #root: establece altura 100% para que el contenido pueda usar toda la altura disponible */
 html, body, #root { height: 100%; }
+
+/* Estilos globales para el body */
+/* @apply: directiva de Tailwind que aplica clases de utilidad */
+/* bg-bg: color de fondo personalizado definido en tailwind.config.cjs */
+/* text-white: color de texto blanco */
+/* font-sans: fuente sans-serif (sin serifas) */
 body { @apply bg-bg text-white font-sans; }
